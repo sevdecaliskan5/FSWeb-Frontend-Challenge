@@ -4,6 +4,12 @@ import reduxLogo from "../assets/icons/reduxlogo.jpg";
 import nodeLogo from "../assets/icons/nodelogo.jpg";
 import vscodeLogo from "../assets/icons/vscodelogo.jpg";
 import figmaLogo from "../assets/icons/figmalogo.jpg";
+import { useTheme } from "../contexts/ThemeContext";
+import { useLanguage } from "../contexts/LanguageContext";
+
+export default function Skills() {
+  const { darkMode } = useTheme(); //tema ayarlarini aliyoruz
+  const { language } = useLanguage(); //dil ayarlarini aliyoruz
 
 const skills = [
   { logo: jsLogo, name: "JavaScript" },
@@ -14,25 +20,22 @@ const skills = [
   { logo: figmaLogo, name: "Figma" },
 ];
 
-export default function Skills() {
-  return (
-    <section className="px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
-      <h2 className="text-4xl font-medium tracking-wide">Skills</h2>
-      <div className="pt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center bg-gray-100 dark:bg-gray-800 p-4 rounded-xl shadow-md"
-          >
-            <img
-              src={skill.logo}
-              alt={skill.name}
-              className="w-20 h-20 object-contain rounded-lg"
-            />
-            <p className="mt-2 text-lg font-semibold">{skill.name}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+const skillsTitle = language === "en" ? "My Skills" : "Yeteneklerim";
+
+  return(
+    <>
+    <main className="px-10 py-10 md:px-60 md:py-20 flex flex-col items-center">
+        <h2 className="text-4xl tracking-wide font-medium  ">{skillsTitle}</h2>
+        <div className="pt-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:flex gap-4 md:gap-10">
+            {skills.map((skill, index) => (
+                <div key={index} className="flex flex-col items-center">
+                    <img className="rounded-xl" src={skill.logo} alt={skill.name} />
+                    <p>{skill.name}</p>
+                </div>
+            ))}
+        </div>
+    </main>
+    
+    </>
+)
 }
