@@ -5,14 +5,21 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import { ThemeProvider } from "./contexts/ThemeContext";
-import { LanguageProvider } from "./contexts/LanguageContext";
+import { useTheme } from './contexts/ThemeContext'; 
+import { ThemeProvider } from './contexts/ThemeContext';
+import { useLanguage } from './contexts/LanguageContext'; 
+import { LanguageProvider } from './contexts/LanguageContext';
+import Header from "./components/Header";
 
 function App() {
+
+  const { toggleTheme } = useTheme();
+  const { toggleLanguage } = useLanguage();
   return (
     <ThemeProvider>
       <LanguageProvider>
         <header>
+          <Header />
           <Hero />
         </header>
         <main>
