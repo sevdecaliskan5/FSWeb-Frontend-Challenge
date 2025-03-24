@@ -9,6 +9,7 @@ import vesPic from "../assets/images/image0.jpeg";
 import emoji from "../assets/images/wavinghand.png";
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
+import { content } from "../data/content";
 
 export default function Hero() {
   const { darkMode, toggleTheme } = useTheme();
@@ -31,17 +32,15 @@ export default function Hero() {
           onClick={toggleLanguage}
           className="px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-800"
         >
-          {language === "en" ? "🇹🇷 TR" : "🇬🇧 EN"}
+          {content[language].toggleLanguage}
         </button>
       </header>
       <main className="text-left flex flex-col md:flex-row place-content-around items-center mt-8 px-6">
         <div className="flex flex-col items-start max-w-[600px]">
-          <h1 className="text-5xl font-bold">Hi! 👋</h1>
-          <p className="text-2xl mt-4 mb-8">
-            I'm <span className="font-bold">Sevde</span>. I’m a front-end
-            developer. I can craft solid and scalable frontend products. Let’s
-            meet!
-          </p>
+          <h1 className="text-5xl font-bold">
+            {content[language].greeting} 👋
+          </h1>
+          <p className="text-2xl mt-4 mb-8">{content[language].description}</p>
 
           <div className="flex gap-4">
             <a href="/">
@@ -61,10 +60,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 text-gray-600 dark:text-gray-400">
-            Currently <span className="text-pink2">Freelancing</span> for{" "}
-            <span className="text-pink2">UX, UI, & Web Design</span> Projects.
-            Invite me to join your team -{" "}
-            <span className="text-pink2">ssevdecaliskan@gmail.com</span>
+            {content[language].freelancingInfo}
           </p>
         </div>
         <div className="bg-white dark:bg-gray-700 rounded-2xl p-2 m-6 max-w-[361px] shadow-lg">
