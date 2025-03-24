@@ -36,7 +36,7 @@ export const content = {
         links: [
           { name: "GitHub", url: "https://github.com/sevdecaliskan5", color: "text-sky-600" },
           { name: "Personal Blog", url: "#", color: "text-black" },
-          { name: "LinkedIn", url: "#", color: "text-cyan-800" },
+          { name: "LinkedIn", url: "https://www.linkedin.com/in/sevdecaliskan/", color: "text-cyan-800" },
           { name: "Email", url: "mailto:ssevdecaliskan@gmail.com", color: "text-pink-500" },
         ],
       },
@@ -78,7 +78,7 @@ export const content = {
         links: [
           { name: "GitHub", url: "https://github.com/sevdecaliskan5", color: "text-sky-600" },
           { name: "Kişisel Blog", url: "#", color: "text-black" },
-          { name: "LinkedIn", url: "#", color: "text-cyan-800" },
+          { name: "LinkedIn", url: "https://www.linkedin.com/in/sevdecaliskan/", color: "text-cyan-800" },
           { name: "E-posta", url: "mailto:ssevdecaliskan@gmail.com", color: "text-pink-500" },
         ],
       },
