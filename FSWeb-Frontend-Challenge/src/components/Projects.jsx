@@ -1,16 +1,26 @@
 import computerImage from "../assets/images/computer.png";
+import { useTheme } from "../contexts/ThemeContext";
+import { useLanguage } from "../contexts/LanguageContext";
+import { content } from "../data/content";
 
 export default function Projects() {
+  const { darkMode } = useTheme();
+  const { language } = useLanguage();
+
+  const projectsContent = content[language].projects; //content dosyasindaki projeler kismini cekiyoruz
+
   return (
     <section className="px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
-      <h2 className="text-4xl tracking-wide font-medium pb-10">Projects</h2>
+      <h2 className="text-4xl tracking-wide font-medium pb-10">
+        {projectsContent.title}
+      </h2>
       {/* cards */}
       <div className="bg-blue-100 dark:bg-gray-800 rounded-2xl w-full max-w-3xl p-8 shadow-md">
-        <h3 className="text-3xl font-medium pb-4">Proje Başlığı</h3>
+        <h3 className="text-3xl font-medium pb-4">
+          {projectsContent.projectTitle}
+        </h3>
         <p className="text-gray-700 dark:text-gray-300">
-          Bu projede modern UI/UX teknikleri ile geliştirilmiş kullanıcı dostu
-          bir arayüz sunulmaktadır. Performans ve erişilebilirlik ön planda
-          tutulmuştur.
+          {projectsContent.projectDescription}
         </p>
 
         {/* tags */}
@@ -33,13 +43,13 @@ export default function Projects() {
             href="https://github.com/sevdecaliskan5"
             className="text-blue-600 dark:text-blue-400 hover:underline"
           >
-            View on GitHub
+            {projectsContent.githubLink}
           </a>
           <a
             href="#"
             className="text-blue-600 dark:text-blue-400 hover:underline"
           >
-            Go to App
+            {projectsContent.appLink}
           </a>
         </div>
 
