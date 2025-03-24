@@ -10,7 +10,7 @@ export default function Projects() {
   const projectsContent = content[language].projects; //content dosyasindaki projeler kismini cekiyoruz
 
   return (
-    <section className="px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
+    <section className="text-start px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
       <h2 className="text-4xl tracking-wide font-medium pb-10">
         {projectsContent.title}
       </h2>
@@ -41,13 +41,13 @@ export default function Projects() {
         <div className="flex justify-between text-lg font-medium py-4">
           <a
             href="https://github.com/sevdecaliskan5"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-blue-600 dark:text-blue-400"
           >
             {projectsContent.githubLink}
           </a>
           <a
             href="#"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-blue-600 dark:text-blue-400"
           >
             {projectsContent.appLink}
           </a>

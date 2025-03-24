@@ -14,7 +14,7 @@ export default function Footer() {
         {footerContent.text}
       </p>
 
-      <div className="flex justify-center md:justify-start md:flex-col gap-4 font-medium">
+      <div className="flex text-start md:justify-start md:flex-col gap-4 font-medium">
         {footerContent.links.map((link, index) => (
           <a
             key={index}
