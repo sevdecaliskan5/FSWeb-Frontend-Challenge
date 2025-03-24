@@ -10,6 +10,7 @@ export const content = {
         github: "GitHub",
       },
       toggleLanguage: "🇹🇷 TR",
+      skillsTitle: "Skills"
     },
     tr: {
       greeting: "Merhaba! 👋",
@@ -22,6 +23,7 @@ export const content = {
         github: "GitHub",
       },
       toggleLanguage: "🇬🇧 EN",
+      skillsTitle: "Yeteneklerim"
     },
   };
   

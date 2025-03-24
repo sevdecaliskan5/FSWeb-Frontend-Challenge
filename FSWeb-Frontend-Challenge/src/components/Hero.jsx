@@ -38,7 +38,7 @@ export default function Hero() {
       <main className="text-left flex flex-col md:flex-row place-content-around items-center mt-8 px-6">
         <div className="flex flex-col items-start max-w-[600px]">
           <h1 className="text-5xl font-bold">
-            {content[language].greeting} 👋
+            {content[language].greeting} 
           </h1>
           <p className="text-2xl mt-4 mb-8">{content[language].description}</p>
 
