@@ -36,7 +36,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="bg-white dark:bg-gray-700 rounded-2xl p-2 m-6 max-w-[361px] shadow-lg">
-          📷 Fotoğraf
+          Fotoğraf
         </div>
       </main>
     </>
