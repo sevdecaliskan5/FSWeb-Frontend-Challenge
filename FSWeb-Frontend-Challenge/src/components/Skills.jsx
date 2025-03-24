@@ -21,7 +21,7 @@ const skills = [
   { logo: figmaLogo, name: "Figma" },
 ];
 
-const skillsTitle = content[language].skillsTitle;
+const skillsTitle = content[language].skillsTitle; //content dosyasindaki yetenekler kismini cekiyoruz
 
   return(
     <>

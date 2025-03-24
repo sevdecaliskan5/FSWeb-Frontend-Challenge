@@ -7,7 +7,7 @@ export default function Profile() {
   const { darkMode } = useTheme();
   const { language } = useLanguage();
 
-  const profileContent = content[language].profile;
+  const profileContent = content[language].profile; //content dosyasindaki profil kismini cekiyoruz
 
   return (
     <section className="px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">

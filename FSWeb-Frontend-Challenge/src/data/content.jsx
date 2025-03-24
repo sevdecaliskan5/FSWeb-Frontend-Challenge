@@ -31,6 +31,15 @@ export const content = {
       githubLink: "View on GitHub",
       appLink: "Go to App",
     },
+    footer: {
+        text: "Let’s work together on your next product.",
+        links: [
+          { name: "GitHub", url: "https://github.com/sevdecaliskan5", color: "text-sky-600" },
+          { name: "Personal Blog", url: "#", color: "text-black" },
+          { name: "LinkedIn", url: "#", color: "text-cyan-800" },
+          { name: "Email", url: "mailto:ssevdecaliskan@gmail.com", color: "text-pink-500" },
+        ],
+      },
   },
   tr: {
     greeting: "Merhaba! 👋",
@@ -64,5 +73,14 @@ export const content = {
       githubLink: "GitHub'da Görüntüle",
       appLink: "Uygulamaya Git",
     },
+    footer: {
+        text: "Hadi birlikte bir sonraki ürününüzü geliştirelim.",
+        links: [
+          { name: "GitHub", url: "https://github.com/sevdecaliskan5", color: "text-sky-600" },
+          { name: "Kişisel Blog", url: "#", color: "text-black" },
+          { name: "LinkedIn", url: "#", color: "text-cyan-800" },
+          { name: "E-posta", url: "mailto:ssevdecaliskan@gmail.com", color: "text-pink-500" },
+        ],
+      },
   },
 };
