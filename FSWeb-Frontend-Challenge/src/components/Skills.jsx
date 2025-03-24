@@ -6,6 +6,7 @@ import vscodeLogo from "../assets/icons/vscodelogo.jpg";
 import figmaLogo from "../assets/icons/figmalogo.jpg";
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
+import { content } from "../data/content";
 
 export default function Skills() {
   const { darkMode } = useTheme(); //tema ayarlarini aliyoruz
@@ -20,7 +21,7 @@ const skills = [
   { logo: figmaLogo, name: "Figma" },
 ];
 
-const skillsTitle = language === "en" ? "My Skills" : "Yeteneklerim";
+const skillsTitle = content[language].skillsTitle;
 
   return(
     <>
