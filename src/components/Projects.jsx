@@ -48,9 +48,13 @@ export default function Projects() {
         >
           {[1, 2, 3, 4].map((index) => (
             <div
-              key={index}
-              className="bg-blue-100 dark:bg-gray-800 rounded-2xl min-w-[350px] p-8 shadow-md"
-            >
+            key={index}
+            className={`bg-blue-100 rounded-2xl min-w-[350px] p-8 shadow-md ${
+              index % 2 === 0
+                ? "dark:bg-koyuyesil bg-bluecard"
+                : "dark:bg-solukyesil bg-greencard"
+            }`}
+          >
               <h3 className="text-2xl font-medium pb-4">
                 {projectsContent.projectTitle}
               </h3>

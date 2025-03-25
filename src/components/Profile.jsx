@@ -13,7 +13,7 @@ export default function Profile() {
       <h2 className="text-4xl font-medium tracking-wide pb-10">{profileContent.profile}</h2>
 
       <div className="grid md:grid-cols-2 gap-10 w-full max-w-4xl">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md">
+        <div className="bg-white dark:bg-neutral-600 rounded-2xl p-6 shadow-md">
           <h3 className="text-start text-lg text-pink-500 font-semibold pb-4">
           {profileContent.basicInfo}
           </h3>
