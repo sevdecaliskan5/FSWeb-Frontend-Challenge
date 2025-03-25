@@ -20,7 +20,7 @@ function App() {
         <div className="dark:bg-koyukahve dark:text-white bg-zinc-100">
           <Profile />
         </div>
-        <div className="relative dark:bg-acikkahve dark:text-white">
+        <div className="w-[1064px] h-[792px] relative dark:bg-acikkahve dark:text-white">
           <Projects />
         </div>
         <footer className="relative dark:bg-acikkahve dark:text-white">
