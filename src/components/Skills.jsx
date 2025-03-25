@@ -5,12 +5,13 @@ import nodeLogo from "../assets/icons/nodelogo.jpg";
 import vscodeLogo from "../assets/icons/vscodelogo.jpg";
 import figmaLogo from "../assets/icons/figmalogo.jpg";
 import { useTheme } from "../contexts/ThemeContext";
-import { useLangChange } from "../contexts/LangChangeContext";
+import { useLanguage } from "../contexts/LanguageContext";
+import { content } from "../data/content";
 
 export default function Skills() {
   const { theme } = useTheme();
-  const { language, content } = useLangChange();
-
+  const { language } = useLanguage();
+  
   const skills = [
     { logo: jsLogo, name: "JavaScript" },
     { logo: reactLogo, name: "React" },
@@ -20,8 +21,11 @@ export default function Skills() {
     { logo: figmaLogo, name: "Figma" },
   ];
 
-  const skillsTitle = content ? content[language].skillsTitle : "Yetenekler"; // content yuklenmediyse ya da yoksa varsayilani kullaniyoruz
+  const skillsTitle = content[language].skillsTitle;
 
+  if (!content) {
+    return <div>Loading...</div>;
+  }
   return (
     <main className="px-10 py-10 md:px-60 md:py-20 flex flex-col items-center">
       <h2 className="text-4xl tracking-wide font-medium">{skillsTitle}</h2>
@@ -36,4 +40,3 @@ export default function Skills() {
     </main>
   );
 }
-
