@@ -5,7 +5,7 @@ import { content } from "../data/content";
 export default function Footer() {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  
+
   const footerContent = content[language].footer;
   const links = footerContent.links || [];
 

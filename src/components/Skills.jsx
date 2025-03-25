@@ -11,7 +11,7 @@ import { content } from "../data/content";
 export default function Skills() {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  
+
   const skills = [
     { logo: jsLogo, name: "JavaScript" },
     { logo: reactLogo, name: "React" },
