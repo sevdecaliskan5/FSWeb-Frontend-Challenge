@@ -1,0 +1,39 @@
+{
+    "greeting": "Hi! 👋",
+    "description": "I'm Sevde. I’m a front-end developer. I can craft solid and scalable frontend products. Let’s meet!",
+    "freelancingInfo": "Currently Freelancing for UX, UI, & Web Design Projects. Invite me to join your team - ssevdecaliskan@gmail.com",
+    "socialMedia": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "toggleLanguage": "🇹🇷 TR",
+    "skillsTitle": "Skills",
+    "profile": {
+      "basicInfo": "Basic Information",
+      "birthDate": "Birth Date",
+      "city": "City",
+      "education": "Education",
+      "educationDetails": "Pamukkale University, Civil Engineering, 2019",
+      "preferredRole": "Preferred Role",
+      "aboutMe": "About Me",
+      "aboutDescription": "I am a front-end developer with a strong passion for crafting scalable and user-friendly web applications. I enjoy working with modern UI frameworks and love transforming designs into fully functional products."
+    },
+    "projects": {
+      "title": "Projects",
+      "projectTitle": "Project Title",
+      "projectDescription": "This project offers a user-friendly interface developed with modern UI/UX techniques. Performance and accessibility are prioritized.",
+      "tags": ["React", "Tailwind", "JavaScript", "Frontend", "Responsive"],
+      "githubLink": "View on GitHub",
+      "appLink": "Go to App"
+    },
+    "footer": {
+      "text": "Let’s work together on your next product.",
+      "links": [
+        { "name": "GitHub", "url": "https://github.com/sevdecaliskan5", "color": "text-sky-600" },
+        { "name": "Personal Blog", "url": "#", "color": "text-black" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com/in/sevdecaliskan/", "color": "text-cyan-800" },
+        { "name": "Email", "url": "mailto:ssevdecaliskan@gmail.com", "color": "text-pink-500" }
+      ]
+    }
+  }
+  
