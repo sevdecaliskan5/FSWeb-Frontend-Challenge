@@ -32,7 +32,7 @@ export default function Projects() {
       </h2>
 
       {/* container */}
-      <div className="relative w-full max-w-4xl">
+      <div className="relative w-full max-w-4xl cards">
         {/* sol */}
         <button
           onClick={scrollLeft}
@@ -44,7 +44,7 @@ export default function Projects() {
         {/* kartlar */}
         <div
           ref={cardContainerRef}
-          className="flex gap-6 overflow-x-scroll scroll-smooth scrollbar-hide w-full px-10"
+          className="flex gap-6 overflow-x-hidden scrollbar-hide px-10"
         >
           {[1, 2, 3, 4].map((index) => (
             <div

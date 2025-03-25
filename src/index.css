@@ -67,3 +67,7 @@
   left: -10px;
   transform: scale(1);
 }
+
+.cards {
+  overflow-x: hidden;
+}
