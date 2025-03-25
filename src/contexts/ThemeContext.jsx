@@ -1,12 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import useLocalStorage from '../hooks/useLocalStorage';
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    const storedTheme = localStorage.getItem("theme");
-    return storedTheme !== null ? storedTheme : "light";
+    return localStorage.getItem("theme") || "light";
   });
 
   useEffect(() => {

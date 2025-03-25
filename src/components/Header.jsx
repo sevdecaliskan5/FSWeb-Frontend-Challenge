@@ -2,7 +2,7 @@ import LangToggle from "./LangToggle";
 import { useTheme } from "../contexts/ThemeContext";
 import Radio from "./Radio";
 import { useLanguage } from "../contexts/LanguageContext"; 
-import { content } from "../data/content";
+import React from "react";
 
 export default function Header (){
     const { theme } = useTheme();

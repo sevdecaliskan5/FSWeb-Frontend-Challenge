@@ -3,11 +3,14 @@ import { useTheme } from "../contexts/ThemeContext";
 
 
 function Radio() {
-  const { toggleTheme } = useTheme();
-  const [isActive, setIsActive] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  const [isActive, setIsActive] = useState(theme === "dark");
+
+useEffect(()=> {
+    setIsActive(theme === "dark");
+    }, [theme]);
 
   const handleRadioClick = () => {
-    setIsActive(!isActive);
     toggleTheme();
   };
 
