@@ -16,6 +16,7 @@ export const content = {
     toggleLanguage: "TR",
     skillsTitle: "Skills",
     profile: {
+      profile: "Profile",
       basicInfo: "Basic Information",
       birthDate: "Birth Date",
       city: "City",
@@ -36,14 +37,26 @@ export const content = {
       appLink: "Go to App",
     },
     footer: {
-        text: "Let’s work together on your next product.",
-        links: [
-          { name: "GitHub", url: "https://github.com/sevdecaliskan5", color: "text-sky-600" },
-          { name: "Personal Blog", url: "#", color: "text-black" },
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/sevdecaliskan/", color: "text-cyan-800" },
-          { name: "Email", url: "mailto:ssevdecaliskan@gmail.com", color: "text-pink-500" },
-        ],
-      },
+      text: "Let’s work together on your next product.",
+      links: [
+        {
+          name: "GitHub",
+          url: "https://github.com/sevdecaliskan5",
+          color: "text-sky-600",
+        },
+        { name: "Personal Blog", url: "#", color: "text-black" },
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/sevdecaliskan/",
+          color: "text-cyan-800",
+        },
+        {
+          name: "Email",
+          url: "mailto:ssevdecaliskan@gmail.com",
+          color: "text-pink-500",
+        },
+      ],
+    },
   },
   tr: {
     greeting: "Merhaba! 👋",
@@ -62,6 +75,7 @@ export const content = {
     toggleLanguage: "EN",
     skillsTitle: "Yeteneklerim",
     profile: {
+      profile: "Profil",
       basicInfo: "Temel Bilgiler",
       birthDate: "Doğum Tarihi",
       city: "İkamet Şehri",
@@ -82,16 +96,25 @@ export const content = {
       appLink: "Uygulamaya Git",
     },
     footer: {
-        text: "Hadi birlikte bir sonraki ürününüzü geliştirelim.",
-        links: [
-          { name: "GitHub", url: "https://github.com/sevdecaliskan5", color: "text-sky-600" },
-          { name: "Kişisel Blog", url: "#", color: "text-black" },
-          { name: "LinkedIn", url: "https://www.linkedin.com/in/sevdecaliskan/", color: "text-cyan-800" },
-          { name: "E-posta", url: "mailto:ssevdecaliskan@gmail.com", color: "text-pink-500" },
-        ],
-      },
+      text: "Hadi birlikte bir sonraki ürününüzü geliştirelim.",
+      links: [
+        {
+          name: "GitHub",
+          url: "https://github.com/sevdecaliskan5",
+          color: "text-sky-600",
+        },
+        { name: "Kişisel Blog", url: "#", color: "text-black" },
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/sevdecaliskan/",
+          color: "text-cyan-800",
+        },
+        {
+          name: "E-posta",
+          url: "mailto:ssevdecaliskan@gmail.com",
+          color: "text-pink-500",
+        },
+      ],
+    },
   },
 };
-
-
-
