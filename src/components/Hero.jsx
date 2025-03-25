@@ -16,11 +16,7 @@ export default function Hero() {
   const { language } = useLanguage();
 
   return (
-    <div
-      className={
-        theme ? "dark bg-white text-gray-900" : "bg-gray-900 text-gray-white"
-      }
-    >
+ 
       <main className="text-left flex flex-col md:flex-row place-content-around items-center mt-8 px-6">
         <div className="flex flex-col items-start max-w-[600px]">
           <h1 className="text-5xl font-bold">{content[language].greeting}</h1>
@@ -51,6 +47,6 @@ export default function Hero() {
           <img src={vesPic} alt="Profile" className="rounded-3xl" />
         </div>
       </main>
-    </div>
+   
   );
 }
