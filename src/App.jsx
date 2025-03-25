@@ -5,20 +5,18 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-// import { useTheme } from './contexts/ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 import { ThemeProvider } from "./contexts/ThemeContext";
-// import { useLanguage } from './contexts/LanguageContext';
-// import { LanguageProvider } from './contexts/LanguageContext';
+import { useLanguage } from './contexts/LanguageContext';
+import { LanguageProvider } from './contexts/LanguageContext';
 import Header from "./components/Header";
-import { LangChangeProvider } from "./contexts/LangChangeContext";
+
 
 
 function App() {
-  // const { toggleTheme } = useTheme();
-  // const { toggleLanguage } = useLanguage();
   return (
     <ThemeProvider>
-      <LangChangeProvider>
+      <LanguageProvider>
         <header>
           <Header />
         </header>
@@ -31,7 +29,7 @@ function App() {
         <footer>
           <Footer />
         </footer>
-      </LangChangeProvider>
+      </LanguageProvider>
     </ThemeProvider>
   );
 }
