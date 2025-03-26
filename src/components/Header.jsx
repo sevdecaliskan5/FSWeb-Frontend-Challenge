@@ -10,7 +10,7 @@ export default function Header (){
 
     return(
         <>
-        <header className="flex justify-end items-center px-10 pb-8 pt-20 md:px-60" >
+        <header className="flex justify-end items-center pt-20 md:px-20" >
             <Radio/>
             <span className="min-w-18 md:min-w-20 ms-3 text-sm font-semibold text-gri2 dark:text-white">
                 {theme === "dark" && language === "tr" ? "GÜNDÜZ" :

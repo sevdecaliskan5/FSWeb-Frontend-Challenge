@@ -1,5 +1,10 @@
 import React, { useState, useRef } from "react";
 import computerImage from "../assets/images/computer.png";
+import ecommerce from "/images/e-ticaret.png";
+import film from "/images/film.png";
+import note from "/images/note.png";
+import pizza from "/images/pizza.png";
+import quiz from "/images/quiz.png";
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { content } from "../data/content";
@@ -10,23 +15,33 @@ export default function Projects() {
   const { language } = useLanguage();
 
   const projectsContent = content[language].projects;
-
   const cardContainerRef = useRef(null);
+  const cardWidth = 500;
+  const cardGap = 32;
+  const containerWidth = cardWidth * 2 + cardGap + 24 * 2;
+
+  const images = [ecommerce, pizza, film, quiz, note];
 
   const scrollRight = () => {
     if (cardContainerRef.current) {
-      cardContainerRef.current.scrollBy({ left: 500, behavior: "smooth" });
+      cardContainerRef.current.scrollBy({
+        left: cardWidth + cardGap,
+        behavior: "smooth",
+      });
     }
   };
 
   const scrollLeft = () => {
     if (cardContainerRef.current) {
-      cardContainerRef.current.scrollBy({ left: -500, behavior: "smooth" });
+      cardContainerRef.current.scrollBy({
+        left: -(cardWidth + cardGap),
+        behavior: "smooth",
+      });
     }
   };
 
   return (
-    <section className="text-start px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
+    <section className="text-start px-10 py-10 md:px-40 md:py-20 flex flex-col items-center w-[1112px]">
       <h2 className="text-4xl tracking-wide font-medium pb-10">
         {projectsContent.title}
       </h2>
@@ -36,7 +51,7 @@ export default function Projects() {
         {/* sol */}
         <button
           onClick={scrollLeft}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
+          className="absolute z-10 left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
         >
           <ChevronLeft size={24} />
         </button>
@@ -45,16 +60,17 @@ export default function Projects() {
         <div
           ref={cardContainerRef}
           className="flex gap-6 overflow-x-hidden scrollbar-hide px-10"
+          style={{ width: containerWidth }}
         >
           {[1, 2, 3, 4].map((index) => (
             <div
-            key={index}
-            className={`bg-blue-100 rounded-2xl min-w-[350px] p-8 shadow-md ${
-              index % 2 === 0
-                ? "dark:bg-koyuyesil bg-bluecard"
-                : "dark:bg-solukyesil bg-greencard"
-            }`}
-          >
+              key={index}
+              className={`bg-blue-100 rounded-2xl min-w-[415px] p-8 shadow-md ${
+                index % 2 === 0
+                  ? "dark:bg-koyuyesil bg-bluecard"
+                  : "dark:bg-solukyesil bg-greencard"
+              }`}
+            >
               <h3 className="text-2xl font-medium pb-4">
                 {projectsContent.projectTitle}
               </h3>
@@ -68,7 +84,7 @@ export default function Projects() {
                   (tag, index) => (
                     <span
                       key={index}
-                      className="bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-3xl py-2 px-3 text-sm font-medium"
+                      className="bg-white dark:bg-[#525252] text-gray-900 dark:text-white rounded-3xl py-2 px-3 text-sm font-medium"
                     >
                       {tag}
                     </span>
@@ -80,11 +96,11 @@ export default function Projects() {
               <div className="flex justify-between text-lg font-medium py-4">
                 <a
                   href="https://github.com/sevdecaliskan5"
-                  className="text-blue-600 dark:text-blue-400"
+                  className="text-blue-600 dark:text-white"
                 >
                   {projectsContent.githubLink}
                 </a>
-                <a href="#" className="text-blue-600 dark:text-blue-400">
+                <a href="#" className="text-blue-600 dark:text-white">
                   {projectsContent.appLink}
                 </a>
               </div>
@@ -92,9 +108,9 @@ export default function Projects() {
               {/* proje foto */}
               <div className="flex justify-center py-8">
                 <img
-                  className="rounded-lg shadow-lg max-w-full h-auto"
+                  className=" relative rounded-lg shadow-lg max-w-full h-auto"
                   src={computerImage}
-                  alt="Project Screenshot"
+                  alt=""
                 />
               </div>
             </div>
@@ -104,7 +120,7 @@ export default function Projects() {
         {/* sag */}
         <button
           onClick={scrollRight}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
+          className="absolute right-0 z-10 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
         >
           <ChevronRight size={24} />
         </button>

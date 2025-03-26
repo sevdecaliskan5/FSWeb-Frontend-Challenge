@@ -28,7 +28,7 @@ export default function Profile() {
         </div>
 
         <div className="text-start flex flex-col justify-center">
-          <h3 className="text-lg font-semibold pb-4">{profileContent.aboutMe}</h3>
+          <h3 className="text-lg font-semibold pb-4 z-10">{profileContent.aboutMe}</h3>
           <p className="text-gray-700 dark:text-gray-300">
           {profileContent.aboutDescription}
           </p>

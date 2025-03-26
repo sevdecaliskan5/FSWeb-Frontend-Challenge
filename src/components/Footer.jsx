@@ -11,7 +11,7 @@ export default function Footer() {
 
   return (
     <footer className="px-10 py-10 md:px-40 md:py-20 grid md:grid-cols-3 gap-10 items-center">
-      <p className="col-span-2 text-3xl md:text-4xl tracking-wide leading-normal font-medium text-right md:pl-20 pr-10">
+      <p className="col-span-2 z-10 text-3xl md:text-4xl tracking-wide leading-10 font-medium text-right md:pl-20 pr-10">
         {footerContent.text}
       </p>
 
