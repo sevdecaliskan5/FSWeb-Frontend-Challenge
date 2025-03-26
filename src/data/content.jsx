@@ -2,9 +2,9 @@ export const content = {
   en: {
     greeting: "Hi! 👋",
     description:
-      "I'm Sevde. I’m a front-end developer. I can craft solid and scalable frontend products. Let’s meet!",
+      "I’m Sevde, a front-end developer focused on user experience. I combine my design and technical skills to create impactful and scalable web experiences.",
     freelancingInfo:
-      "Currently Freelancing for UX, UI, & Web Design Projects. Invite me to join your team - ssevdecaliskan@gmail.com",
+      "I’m currently freelancing in UX/UI design and web development. How about collaborating on a new project? Reach out to me: ssevdecaliskan@gmail.com",
     socialMedia: {
       linkedin: "LinkedIn",
       github: "GitHub",
@@ -25,7 +25,7 @@ export const content = {
       preferredRole: "Preferred Role",
       aboutMe: "About Me",
       aboutDescription:
-        "I am a front-end developer with a strong passion for crafting scalable and user-friendly web applications. I enjoy working with modern UI frameworks and love transforming designs into fully functional products.",
+        "I am a front-end developer focused on creating user-friendly and scalable web applications. I have a deep passion for working with modern UI frameworks and transforming designs into fully functional, high-performance products. By prioritizing user experience, I strive to balance aesthetics and functionality in every project I work on.",
     },
     projects: {
       title: "Projects",
@@ -61,9 +61,9 @@ export const content = {
   tr: {
     greeting: "Merhaba! 👋",
     description:
-      "Ben Sevde. Ben bir front-end geliştiricisiyim. Sağlam ve ölçeklenebilir frontend ürünleri oluşturabilirim. Hadi tanışalım!",
+      "Ben Sevde, kullanıcı deneyimi odaklı front-end geliştiricisiyim. Etkileyici ve ölçeklenebilir web deneyimleri oluşturmak için tasarım ve teknik bilgimi birleştiriyorum.",
     freelancingInfo:
-      "Şu anda UX, UI ve Web Tasarımı projeleri için serbest çalışıyorum. Beni ekibinize katılmaya davet edin - ssevdecaliskan@gmail.com",
+      "Şu anda UX/UI tasarımı ve web geliştirme projelerinde serbest çalışıyorum. Yeni bir projede birlikte çalışmaya ne dersiniz? Bana ulaşın: ssevdecaliskan@gmail.com",
     socialMedia: {
       linkedin: "LinkedIn",
       github: "GitHub",
@@ -84,7 +84,7 @@ export const content = {
       preferredRole: "Tercih Ettiği Rol",
       aboutMe: "Hakkımda",
       aboutDescription:
-        "Ben bir front-end geliştiricisiyim ve ölçeklenebilir, kullanıcı dostu web uygulamaları yapmaya büyük bir tutkum var. Modern UI framework'leriyle çalışmayı seviyorum ve tasarımları tamamen fonksiyonel ürünlere dönüştürmeyi çok keyifli buluyorum.",
+        "Ben, kullanıcı dostu ve ölçeklenebilir web uygulamaları geliştirmeye odaklanmış bir front-end geliştiricisiyim. Modern UI framework'leri ile çalışmak ve tasarımları tamamen fonksiyonel ve yüksek performanslı ürünlere dönüştürmek konusunda derin bir tutkum var. Kullanıcı deneyimini ön planda tutarak, her projede estetik ve işlevselliği dengeli bir şekilde birleştirmeye özen gösteriyorum.",
     },
     projects: {
       title: "Projeler",
