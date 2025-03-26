@@ -25,7 +25,7 @@ export const content = {
       preferredRole: "Preferred Role",
       aboutMe: "About Me",
       aboutDescription:
-        "I am a front-end developer focused on creating user-friendly and scalable web applications. I have a deep passion for working with modern UI frameworks and transforming designs into fully functional, high-performance products. By prioritizing user experience, I strive to balance aesthetics and functionality in every project I work on.",
+        "I was born in 1996 in Izmir and have a degree in Civil Engineering. My passion for design and technology led me to Front-End development, where I focus on enhancing my skills. I continuously improve myself through both independent learning and various courses in software development. I build user-friendly designs using Front-End languages and technologies like React and TailwindCSS. Learning new technologies and applying them in my projects is something I enjoy.",
     },
     projects: {
       title: "Projects",
@@ -84,7 +84,7 @@ export const content = {
       preferredRole: "Tercih Ettiği Rol",
       aboutMe: "Hakkımda",
       aboutDescription:
-        "Ben, kullanıcı dostu ve ölçeklenebilir web uygulamaları geliştirmeye odaklanmış bir front-end geliştiricisiyim. Modern UI framework'leri ile çalışmak ve tasarımları tamamen fonksiyonel ve yüksek performanslı ürünlere dönüştürmek konusunda derin bir tutkum var. Kullanıcı deneyimini ön planda tutarak, her projede estetik ve işlevselliği dengeli bir şekilde birleştirmeye özen gösteriyorum.",
+        "1996 yılında İzmir'de doğdum ve İnşaat Mühendisliği mezunuyum. Tasarım ve teknolojiye olan tutkum beni Front-End geliştirmeye yönlendirdi ve bu alanda becerilerimi geliştirmeye odaklandım. Hem bağımsız öğrenme hem de yazılım geliştirme kursları aracılığıyla kendimi sürekli olarak geliştiriyorum. React ve TailwindCSS gibi Front-End dilleri ve teknolojileri kullanarak kullanıcı dostu tasarımlar yapıyorum. Yeni teknolojiler öğrenmek ve bunları projelerimde uygulamak benim için keyifli bir süreç.",
     },
     projects: {
       title: "Projeler",
