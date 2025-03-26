@@ -41,28 +41,26 @@ export default function Projects() {
   };
 
   return (
-    <section className="text-start px-10 py-10 md:px-40 md:py-20 flex flex-col items-center w-[1112px]">
+    <section className="text-start px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
       <h2 className="text-4xl tracking-wide font-medium pb-10">
         {projectsContent.title}
       </h2>
-
       {/* container */}
       <div className="relative w-full max-w-4xl cards">
         {/* sol */}
         <button
           onClick={scrollLeft}
-          className="absolute z-10 left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
         >
           <ChevronLeft size={24} />
         </button>
-
         {/* kartlar */}
+
         <div
           ref={cardContainerRef}
           className="flex gap-6 overflow-x-hidden scrollbar-hide px-10"
-          style={{ width: containerWidth }}
         >
-          {[1, 2, 3, 4].map((index) => (
+          {projectsContent.list.map((project, index) => (
             <div
               key={index}
               className={`bg-blue-100 rounded-2xl min-w-[415px] p-8 shadow-md ${
@@ -72,35 +70,35 @@ export default function Projects() {
               }`}
             >
               <h3 className="text-2xl font-medium pb-4">
-                {projectsContent.projectTitle}
+                {project.projectTitle}
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                {projectsContent.projectDescription}
+                {project.projectDescription}
               </p>
 
-              {/* etiketler */}
+              {/* Etiketler */}
               <div className="flex flex-wrap gap-2 py-4">
-                {["React", "Tailwind", "JavaScript", "Frontend"].map(
-                  (tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-white dark:bg-[#525252] text-gray-900 dark:text-white rounded-3xl py-2 px-3 text-sm font-medium"
-                    >
-                      {tag}
-                    </span>
-                  )
-                )}
+                {project.tags.map((tag, i) => (
+                  <span
+                    key={i}
+                    className="bg-white dark:bg-[#525252] text-gray-900 dark:text-white rounded-3xl py-2 px-3 text-sm font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
-
-              {/* linkler */}
+              {/* Linkler */}
               <div className="flex justify-between text-lg font-medium py-4">
                 <a
-                  href="https://github.com/sevdecaliskan5"
+                  href={project.githubLink}
                   className="text-blue-600 dark:text-white"
                 >
                   {projectsContent.githubLink}
                 </a>
-                <a href="#" className="text-blue-600 dark:text-white">
+                <a
+                  href={project.appLink}
+                  className="text-blue-600 dark:text-white"
+                >
                   {projectsContent.appLink}
                 </a>
               </div>

@@ -27,14 +27,51 @@ export const content = {
       aboutDescription:
         "I was born in 1996 in Izmir and have a degree in Civil Engineering. My passion for design and technology led me to Front-End development, where I focus on enhancing my skills. I continuously improve myself through both independent learning and various courses in software development. I build user-friendly designs using Front-End languages and technologies like React and TailwindCSS. Learning new technologies and applying them in my projects is something I enjoy.",
     },
+
     projects: {
       title: "Projects",
-      projectTitle: "Project Title",
-      projectDescription:
-        "This project offers a user-friendly interface developed with modern UI/UX techniques. Performance and accessibility are prioritized.",
-      tags: ["React", "Tailwind", "JavaScript", "Frontend", "Responsive"],
-      githubLink: "View on GitHub",
-      appLink: "Go to App",
+      list: [
+        {
+          projectTitle: "PizzaPal",
+          projectDescription:
+            "A React-based pizza order application where users can select pizzas, add toppings, and place an order. The app calculates the total price based on user selections.",
+          tags: ["JavaScript", "React", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "Movie Finder",
+          projectDescription:
+            "An app that allows users to search for movies using the OMDB API and view movie details.",
+          tags: ["JavaScript", "React", "API"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "QuizMaster",
+          projectDescription:
+            "A quiz application that allows users to answer multiple-choice questions and get their results at the end.",
+          tags: ["JavaScript", "React", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "CalcMaster",
+          projectDescription:
+            "A simple calculator app where users can perform basic mathematical operations like addition, subtraction, multiplication, and division. It provides an intuitive UI and real-time calculations.",
+          tags: ["JavaScript", "React", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "ToDoMaster",
+          projectDescription:
+            "A simple to-do list application where users can add, edit, and delete tasks. It uses LocalStorage to persist data even after the browser is closed.",
+          tags: ["JavaScript", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+      ],
     },
     footer: {
       text: "Let’s work together on your next product.",
@@ -88,13 +125,51 @@ export const content = {
     },
     projects: {
       title: "Projeler",
-      projectTitle: "Proje Başlığı",
-      projectDescription:
-        "Bu projede modern UI/UX teknikleri ile geliştirilmiş kullanıcı dostu bir arayüz sunulmaktadır. Performans ve erişilebilirlik ön planda tutulmuştur.",
-      tags: ["React", "Tailwind", "JavaScript", "Frontend", "Responsive"],
-      githubLink: "GitHub'da Görüntüle",
-      appLink: "Uygulamaya Git",
+      list: [
+        {
+          projectTitle: "PizzaPal",
+          projectDescription:
+            "Kullanıcıların pizza seçip, malzeme ekleyerek sipariş verebildiği bir React tabanlı pizza sipariş uygulaması. Uygulama, kullanıcı seçimlerine göre toplam fiyatı hesaplar.",
+          tags: ["JavaScript", "React", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "Movie Finder",
+          projectDescription:
+            "Kullanıcıların OMDB API kullanarak film arayabileceği ve film detaylarını görüntüleyebileceği bir uygulama.",
+          tags: ["JavaScript", "React", "API"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "QuizMaster",
+          projectDescription:
+            "Kullanıcıların çoktan seçmeli soruları yanıtlayıp sonunda sonuçlarını görebileceği bir quiz uygulaması.",
+          tags: ["JavaScript", "React", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "CalcMaster",
+          projectDescription:
+            "Kullanıcıların toplama, çıkarma, çarpma ve bölme gibi temel matematiksel işlemleri yapabildiği basit bir hesap makinesi uygulaması. Kullanıcı dostu bir arayüze ve gerçek zamanlı hesaplamalara sahiptir.",
+          tags: ["JavaScript", "React", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+        {
+          projectTitle: "ToDoMaster",
+          projectDescription:
+            "Kullanıcıların görev ekleyip, düzenleyip, silebildiği basit bir yapılacaklar listesi uygulaması. Veriler, tarayıcı kapatılsa bile kaydedilmesi için LocalStorage kullanılarak saklanır.",
+          tags: ["JavaScript", "CSS"],
+          githubLink: "#",
+          appLink: "#",
+        },
+      ],
     },
+    
+
     footer: {
       text: "Hadi birlikte bir sonraki ürününüzü geliştirelim.",
       links: [
