@@ -1,10 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import computerImage from "../assets/images/computer.png";
-import ecommerce from "/images/e-ticaret.png";
-import film from "/images/film.png";
-import note from "/images/note.png";
-import pizza from "/images/pizza.png";
-import quiz from "/images/quiz.png";
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { content } from "../data/content";
@@ -14,13 +9,34 @@ export default function Projects() {
   const { theme } = useTheme();
   const { language } = useLanguage();
 
-  const projectsContent = content[language].projects;
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(true);
   const cardContainerRef = useRef(null);
-  const cardWidth = 500;
-  const cardGap = 32;
-  const containerWidth = cardWidth * 2 + cardGap + 24 * 2;
 
-  const images = [ecommerce, pizza, film, quiz, note];
+  const projectsContent = content[language].projects;
+
+  const cardWidth = 500;
+  const cardGap = 24;
+
+  const handleScroll = () => {
+    if (cardContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = cardContainerRef.current;
+      setShowLeftArrow(scrollLeft > 0); // sol oka ihtiyac durumu
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10); // Eğer scrollLeft, maksimum kaydırma mesafesinden küçükse sağ oka ihtiyacımız var.
+      // 10 piksellik bir tolerans eklenerek tam sınırda okun kaybolması önlenmiştir.
+    }
+  };
+
+  useEffect(() => {
+    const containerRef = cardContainerRef.current;
+    if (containerRef) {
+      // Scroll olayını dinleyerek her kaydırma olduğunda handleScroll fonksiyonunu çalıştır
+      containerRef.addEventListener("scroll", handleScroll);
+      // İlk yükleme sırasında ok durumunu ayarla
+      handleScroll(); // Sayfa yüklendiğinde mevcut scroll durumunu kontrol et
+      return () => containerRef.removeEventListener("scroll", handleScroll); // Component unmount olduğunda event listener'ı kaldırarak gereksiz bellek kullanımını önle
+    }
+  }, []);
 
   const scrollRight = () => {
     if (cardContainerRef.current) {
@@ -41,42 +57,46 @@ export default function Projects() {
   };
 
   return (
-    <section className="text-start px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
+    <section className="text-start px-6 py-10 md:px-10 lg:px-20 flex flex-col items-center">
       <h2 className="text-4xl tracking-wide font-medium pb-10">
         {projectsContent.title}
       </h2>
       {/* container */}
-      <div className="relative w-full max-w-4xl cards">
-        {/* sol */}
+      <div className="relative w-full max-w-[1024px] cards">
+        {/* left */}
         <button
           onClick={scrollLeft}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-100 z-10 transition duration-300"
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft size={24} className="text-gray-700 dark:text-white" />
         </button>
-        {/* kartlar */}
+        {/* cards */}
 
         <div
           ref={cardContainerRef}
-          className="flex gap-6 overflow-x-hidden scrollbar-hide px-10"
+          className="cursor-pointer relative flex gap-6 overflow-x-auto scrollbar-hide px-2 py-2 scroll-smooth snap-x"
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
         >
           {projectsContent.list.map((project, index) => (
             <div
               key={index}
-              className={`bg-blue-100 rounded-2xl min-w-[415px] p-8 shadow-md ${
+              className={`relative rounded-2xl min-w-[500px] max-w-[500px] p-8 shadow-md snap-start ${
                 index % 2 === 0
-                  ? "dark:bg-koyuyesil bg-bluecard"
-                  : "dark:bg-solukyesil bg-greencard"
-              }`}
+                  ? " bg-bluecard dark:bg-koyuyesil"
+                  : " bg-greencard dark:bg-solukyesil"
+              }transition-transform duration-300 hover:scale-[1.02] `}
             >
               <h3 className="text-2xl font-medium pb-4">
                 {project.projectTitle}
               </h3>
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-gray-700 dark:text-gray-300 line-clamp-3">
                 {project.projectDescription}
               </p>
 
-              {/* Etiketler */}
+              {/* tags */}
               <div className="flex flex-wrap gap-2 py-4">
                 {project.tags.map((tag, i) => (
                   <span
@@ -87,41 +107,53 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              {/* Linkler */}
+              {/* links */}
               <div className="flex justify-between text-lg font-medium py-4">
                 <a
                   href={project.githubLink}
-                  className="text-blue-600 dark:text-white"
+                  className="text-black dark:text-white"
+                  target="_blank"
                 >
-                  {projectsContent.githubLink}
+                  {projectsContent.githubLink}View on Github
                 </a>
                 <a
                   href={project.appLink}
-                  className="text-blue-600 dark:text-white"
+                  className="text-black dark:text-white"
                 >
-                  {projectsContent.appLink}
+                  {projectsContent.appLink}Go to App
                 </a>
               </div>
 
-              {/* proje foto */}
-              <div className="flex justify-center py-8">
+              {/* project photo */}
+              <div className="relative flex justify-center py-4">
                 <img
-                  className=" relative rounded-lg shadow-lg max-w-full h-auto"
+                  className="rounded-lg w-full h-auto"
                   src={computerImage}
                   alt=""
                 />
+                {project.img ? (
+                  <img
+                    className="absolute top-[9%] left-[13%] w-[74%] h-[70%] rounded-md overflow-hidden object-cover"
+                    src={`${project.img}`}
+                  ></img>
+                ) : (
+                  <p></p>
+                )}
               </div>
             </div>
           ))}
         </div>
 
-        {/* sag */}
-        <button
-          onClick={scrollRight}
-          className="absolute right-0 z-10 top-1/2 transform -translate-y-1/2 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-300"
-        >
-          <ChevronRight size={24} />
-        </button>
+        {/* sag ok sadece gerektiginde gozukuyor */}
+        {showRightArrow && (
+          <button
+            onClick={scrollRight}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-gray-700 p-2 rounded-full shadow-md hover:bg-gray-100 z-10 transition duration-300"
+            aria-label="Sonraki projeler"
+          >
+            <ChevronRight size={24} className="text-gray-700 dark:text-white" />
+          </button>
+        )}
       </div>
     </section>
   );
