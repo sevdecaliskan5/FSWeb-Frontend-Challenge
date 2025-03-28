@@ -121,6 +121,7 @@ export default function Projects() {
                   className="text-black dark:text-white"
                 >
                   {projectsContent.appLink}Go to App
+                  target="_blank"
                 </a>
               </div>
 
