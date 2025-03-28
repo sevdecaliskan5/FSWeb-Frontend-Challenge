@@ -8,6 +8,7 @@ import netflix from "/images/netflix.png";
 import starbucks from "/images/starbucks.png";
 import pizza from "/images/pizza.png";
 import showcase from "/images/show.png";
+import academy from "/images/academy.png";
 
 export const content = {
   en: {
@@ -46,7 +47,8 @@ export const content = {
           projectDescription:
             "A React-based pizza ordering application where users can select pizzas, add ingredients, and automatically calculate the total price.",
           tags: ["JavaScript", "React", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink:
+            "https://github.com/sevdecaliskan5/fsweb-s8-challenge-pizza",
           appLink: "https://fsweb-s8-challenge-pizza-omega.vercel.app/",
           img: pizza,
         },
@@ -55,7 +57,7 @@ export const content = {
           projectDescription:
             "A modern and responsive portfolio site featuring an interactive terminal-style section and dark/light mode toggle.",
           tags: ["JavaScript", "React", "Tailwind"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/my-portfolio",
           appLink: "https://my-portfolio-n5mk.vercel.app/",
           img: showcase,
         },
@@ -64,7 +66,8 @@ export const content = {
           projectDescription:
             "A simple calculator app that allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division.",
           tags: ["JavaScript", "React", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink:
+            "https://github.com/sevdecaliskan5/FSWeb-S10D1-HesapMakinesi",
           appLink: "#",
           img: "",
         },
@@ -73,7 +76,7 @@ export const content = {
           projectDescription:
             "A simple to-do list application where users can add, edit, and delete tasks. Data is stored using LocalStorage to persist even after closing the browser.",
           tags: ["JavaScript", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Note-Keeper",
           appLink: "https://note-keeper-silk-seven.vercel.app/",
           img: notekeeper,
         },
@@ -82,7 +85,7 @@ export const content = {
           projectDescription:
             "A movie discovery site listing popular, top-rated, and newly released movies, including posters, descriptions, and genre details.",
           tags: ["JavaScript", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Movie-WebSite",
           appLink: "https://movie-web-site-ten.vercel.app/",
           img: movie,
         },
@@ -91,7 +94,7 @@ export const content = {
           projectDescription:
             "A replica of Netflix's homepage built with HTML and CSS. The responsive design ensures compatibility with different screen sizes.",
           tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Netflix-Clone",
           appLink: "https://netflix-clone-rho-coral-22.vercel.app/",
           img: netflix,
         },
@@ -100,16 +103,25 @@ export const content = {
           projectDescription:
             "A user-friendly real estate listing site featuring properties for sale and rent, complete with photos, descriptions, prices, and location details.",
           tags: ["HTML", "Bootstrap"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/RealEstate",
           appLink: "https://real-estate-chi-sepia.vercel.app/",
           img: emaartech,
+        },
+        {
+          projectTitle: "Udemig Academy",
+          projectDescription:
+            "An educational platform that includes detailed information about the courses provided by the software training institution and student reviews.",
+          tags: ["HTML", "CSS"],
+          githubLink: "https://github.com/sevdecaliskan5/UdemigAcademy",
+          appLink: "https://udemig-academy.vercel.app/",
+          img: academy,
         },
         {
           projectTitle: "JBL",
           projectDescription:
             "A website built with HTML and SCSS showcasing different JBL headphone models, their features, and best-selling products with a responsive design.",
           tags: ["HTML", "SCSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/JBL-Clone",
           appLink: "https://jbl-clone-eight.vercel.app/",
           img: jbl,
         },
@@ -117,8 +129,8 @@ export const content = {
           projectTitle: "Udemig Education",
           projectDescription:
             "A clean and user-friendly educational platform featuring software courses with detailed information on course structures.",
-          tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          tags: ["HTML", "SCSS"],
+          githubLink: "https://github.com/sevdecaliskan5/EducationWebSite",
           appLink: "https://education-web-site-one.vercel.app/",
           img: education,
         },
@@ -127,7 +139,7 @@ export const content = {
           projectDescription:
             "A project replicating Amazon's homepage design, including product categories and promotional banners for an authentic Amazon experience.",
           tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Amazon-Clone",
           appLink: "https://amazon-clone-zeta-peach.vercel.app/",
           img: amazon,
         },
@@ -136,7 +148,7 @@ export const content = {
           projectDescription:
             "A Starbucks-themed website that stays true to its color palette, typography, and design, offering an intuitive interface for exploring products and services.",
           tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Starbucks-Clone",
           appLink: "https://starbucks-clone-six-pi.vercel.app/",
           img: starbucks,
         },
@@ -199,99 +211,112 @@ export const content = {
         {
           projectTitle: "PizzaPal",
           projectDescription:
-            "Kullanıcıların pizza seçip malzeme ekleyerek sipariş verebildiği, toplam tutarın otomatik hesaplandığı React tabanlı bir pizza sipariş uygulaması.",
+            "Kullanıcıların pizza seçip, malzemeler ekleyerek toplam fiyatı otomatik olarak hesaplayabileceği React tabanlı bir pizza sipariş uygulaması.",
           tags: ["JavaScript", "React", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink:
+            "https://github.com/sevdecaliskan5/fsweb-s8-challenge-pizza",
           appLink: "https://fsweb-s8-challenge-pizza-omega.vercel.app/",
           img: pizza,
         },
         {
           projectTitle: "Showcase",
           projectDescription:
-            "Modern, duyarlı bir tasarıma sahip olup terminal tarzında interaktif bir bölüm, karanlık/açık mod geçişi sunan bir portföy sitesi.",
+            "Etkileşimli bir terminal tarzı bölüm ve karanlık/aydınlık mod geçişi içeren modern ve duyarlı bir portföy sitesi.",
           tags: ["JavaScript", "React", "Tailwind"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/my-portfolio",
           appLink: "https://my-portfolio-n5mk.vercel.app/",
           img: showcase,
         },
         {
           projectTitle: "CalcMaster",
           projectDescription:
-            "Kullanıcıların toplama, çıkarma, çarpma ve bölme gibi temel matematiksel işlemleri yapabildiği basit bir hesap makinesi uygulaması.",
+            "Kullanıcıların toplama, çıkarma, çarpma ve bölme gibi temel matematiksel işlemleri yapmasına olanak tanıyan basit bir hesap makinesi uygulaması.",
           tags: ["JavaScript", "React", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink:
+            "https://github.com/sevdecaliskan5/FSWeb-S10D1-HesapMakinesi",
           appLink: "#",
           img: "",
         },
         {
           projectTitle: "Note Keeper",
           projectDescription:
-            "Kullanıcıların görev ekleyip düzenleyebildiği ve silebildiği basit bir yapılacaklar listesi uygulaması. Veriler, tarayıcı kapatıldığında bile saklanması için LocalStorage kullanılarak kaydedilir.",
+            "Kullanıcıların görevleri ekleyip düzenleyebileceği ve silebileceği basit bir yapılacaklar listesi uygulaması. Veriler, tarayıcı kapatıldığında bile saklanacak şekilde LocalStorage kullanılarak depolanır.",
           tags: ["JavaScript", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Note-Keeper",
           appLink: "https://note-keeper-silk-seven.vercel.app/",
           img: notekeeper,
         },
         {
           projectTitle: "Movie Finder",
           projectDescription:
-            "Popüler, en yüksek puanlı ve yeni çıkan filmleri listeleyen bir film keşif sitesi. Filmlerle ilgili afiş, açıklama ve tür bilgileri içermektedir.",
+            "Popüler, yüksek puanlı ve yeni çıkan filmleri, posterleri, açıklamaları ve tür bilgilerini içeren bir film keşif sitesi.",
           tags: ["JavaScript", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Movie-WebSite",
           appLink: "https://movie-web-site-ten.vercel.app/",
           img: movie,
         },
         {
           projectTitle: "Netflix Clone",
           projectDescription:
-            "HTML ve CSS ile geliştirilmiş, Netflix'in ana sayfa tasarımını taklit eden bir arayüz. Duyarlı tasarımı sayesinde farklı ekran boyutlarına uyum sağlar.",
+            "HTML ve CSS kullanarak Netflix'in anasayfasının bir kopyası. Farklı ekran boyutlarına uyum sağlayacak şekilde duyarlı bir tasarıma sahiptir.",
           tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Netflix-Clone",
           appLink: "https://netflix-clone-rho-coral-22.vercel.app/",
           img: netflix,
         },
         {
           projectTitle: "EmaarTech",
           projectDescription:
-            "Satılık ve kiralık emlak ilanlarını listeleyen kullanıcı dostu bir arayüz. İlanların fotoğrafları, açıklamaları, fiyatları ve konum bilgileri bulunmaktadır.",
+            "Satılık ve kiralık gayrimenkulleri, fotoğraflar, açıklamalar, fiyatlar ve konum detaylarıyla birlikte sunan kullanıcı dostu bir emlak listeleme sitesi.",
           tags: ["HTML", "Bootstrap"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/RealEstate",
           appLink: "https://real-estate-chi-sepia.vercel.app/",
           img: emaartech,
         },
+
+        {
+          projectTitle: "Udemig Academy",
+          projectDescription:
+            "Yazılım kursu veren kurumun verdiği kurslarla ilgili detaylı bilgi ve öğrenci yorumlarını içeren eğitim platformu.",
+          tags: ["HTML", "CSS"],
+          githubLink: "https://github.com/sevdecaliskan5/UdemigAcademy",
+          appLink: "https://udemig-academy.vercel.app/",
+          img: academy,
+        },
+
         {
           projectTitle: "JBL",
           projectDescription:
-            "HTML ve SCSS kullanılarak oluşturulan bir site. Farklı JBL kulaklık modellerini, özelliklerini ve en çok satanları tanıtan duyarlı bir tasarım sunar.",
+            "HTML ve SCSS ile farklı JBL kulaklık modellerini, özelliklerini ve en çok satılan ürünleri sergileyen duyarlı bir web sitesi.",
           tags: ["HTML", "SCSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/JBL-Clone",
           appLink: "https://jbl-clone-eight.vercel.app/",
           img: jbl,
         },
         {
           projectTitle: "Udemig Education",
           projectDescription:
-            "Yazılım kurslarını içeren temiz ve kullanıcı dostu bir eğitim platformu. Kurs yapıları hakkında detaylı bilgiler sunar.",
-          tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+            "Yazılım kurslarıyla ilgili detaylı bilgilere sahip, temiz ve kullanıcı dostu bir eğitim platformu.",
+          tags: ["HTML", "SCSS"],
+          githubLink: "https://github.com/sevdecaliskan5/EducationWebSite",
           appLink: "https://education-web-site-one.vercel.app/",
           img: education,
         },
         {
           projectTitle: "Amazon Clone",
           projectDescription:
-            "Amazon ana sayfasının tasarımını taklit eden bir proje. Ürün kategorileri ve promosyon afişleriyle Amazon deneyimini sunar.",
+            "Amazon'un anasayfa tasarımını kopyalayan, ürün kategorileri ve promosyonel banner'lar içeren bir proje.",
           tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Amazon-Clone",
           appLink: "https://amazon-clone-zeta-peach.vercel.app/",
           img: amazon,
         },
         {
           projectTitle: "Starbucks Clone",
           projectDescription:
-            "Starbucks'ın renk paleti, tipografisi ve tasarımına sadık kalan bir web sitesi. Ürünleri ve hizmetleri keşfetmek için kullanıcı dostu bir arayüz sunar.",
+            "Starbucks'ın renk paleti, tipografi ve tasarımına sadık kalan, ürünleri ve hizmetleri keşfetmek için sezgisel bir arayüze sahip bir Starbucks temalı site.",
           tags: ["HTML", "CSS"],
-          githubLink: "https://github.com/sevdecaliskan5",
+          githubLink: "https://github.com/sevdecaliskan5/Starbucks-Clone",
           appLink: "https://starbucks-clone-six-pi.vercel.app/",
           img: starbucks,
         },
